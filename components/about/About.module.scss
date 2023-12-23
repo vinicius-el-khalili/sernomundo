@@ -1,0 +1,41 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid red;
+    padding: 3rem;
+    gap: 3rem;
+    border: 1px solid black;
+    .cl1 {
+        border: 1px solid black;
+        margin: auto;
+        width:  100%;
+        max-width: 320px;
+        .imgContainer {
+            position: relative;
+            height: 320px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        .subText {
+            padding: 1rem;
+            p{
+                &:nth-child(1){
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+    .text {
+        border: 1px solid black;
+        margin: auto;
+        max-width: 320px;
+    }
+    .icons {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+}

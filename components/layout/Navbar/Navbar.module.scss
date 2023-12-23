@@ -1,6 +1,6 @@
 .Navbar {
     width: 100vw;
-    height: 3rem;
+    height: 5rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -13,10 +13,34 @@
     font-size: 2rem;
     font-weight: bold;
     transition-timing-function: ease-in-out;
+    background-color: lightblue;
+    user-select: none;
 
     p {
         color: transparent;
     }
+}
+
+.logo {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0rem);
+    height: 5rem;
+    width:  5rem;
+    z-index: 2;
+}
+
+.title {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.3rem;
+    transform: translate(1.5rem,1.55rem);
+    font-weight: lighter;
 }
 
 .NavbarOn {

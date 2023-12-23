@@ -2,14 +2,12 @@
 
 .Hero{
     height: 100vh;
-    max-width: 320px;
     margin: auto;
     background-color: #E9D8B4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 2rem;
     .heroImage {
         position: relative;
@@ -20,7 +18,9 @@
     }
     .heroHeader{
         width: 100%;
-        margin: 1remw;
+        margin: 1rem;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         h1{
             color: #5DA7AA;
         }
@@ -28,6 +28,18 @@
     .heroSubText{
         color: #103D40;
         margin-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        p {
+            &:nth-child(1){
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+            &:nth-child(2){
+                font-weight: bolder;
+            }
+        }
     }
     .zapButton {
         font-size: .85rem;
